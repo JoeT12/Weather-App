@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title onclick="page_reload()">My Weather App</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+  </head>
+   <body style> 
+    <!-- Start your project here-->
+
+    <!-- Just an image -->
+<nav class="navbar navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#" onclick="page_reload()">
+      <img
+        src="https://cdn.iconscout.com/icon/free/png-256/cloudy-weather-11-1147979.png"
+        height="40"
+        alt="Weather Logo"
+        loading="lazy"
+        
+      />My Weather App
+      
+    </a>
+      <form class="d-flex input-group w-auto" >
+        <input
+          type="search"
+          style="width: 272px;"
+          id = "search_bar"
+          class="form-control rounded"
+          placeholder="Location,Country Code(optional)"
+          aria-label="Search"
+          aria-describedby="search-addon"
+          onkeypress="keypress()"
+          
+        />
+        <span class="input-group-text border-0" id="search-addon" onclick="search_location()">
+          <i class="fas fa-search"></i>  
+          
+        
+  </div>
+    
+
+      
+  
+</nav>
+
+    <div class="border d-flex align-items-center justify-content-center" style="height: 750px;">
+    <div class="card justify-content-center " style="background-color:white ;">
+      <div class="card-header h2 p-4 border-3" id="location" style="text-align:center ;"></div>
+      <div class="card-body justify-content-center">
+        <center>
+        <div id = "temp" style="font-size: 50px;"></div>
+        <img id = "icon" src="" height = "100"/>
+        <div id="conditions" style="font-size: 30px;" ></div>
+        <div id="humidity" style="font-size: 17px;" ></div>
+        <div id="windSpeed" style="font-size: 17px;" ></div>
+        <div id="localTime" style="font-size: 17px;" ></div>
+        </center>
+      </div>
+      <div class="card-footer border-3 text-muted justify-content-center" id="lastUpdated" style="text-align:center ;" ></div>
+    </div>
+    </div>
+    <!-- End your project here-->
+
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript" src="weather_app.js"></script>
+  </body>
+</html>
