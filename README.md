@@ -11,5 +11,7 @@ Due to regular expressions being used to validate the input of the search bar, t
 # Screenshots of Program Working
 ![image](https://user-images.githubusercontent.com/108418412/192860140-93e2344b-9e43-4e0c-8c13-e4da7c3f0e45.png)
 ![image](https://user-images.githubusercontent.com/108418412/192860965-d0c3e10e-d817-4506-ba37-442f5a9e3dd9.png)
+![image](https://user-images.githubusercontent.com/108418412/192862487-ed0c5b66-0756-4dd9-8781-2c37f0269e0b.png)
+
 
 
